@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Test Upload API</h2>
+    <input type="file" id="fileInput" accept=".xlsx,.csv" />
+    <button onclick="upload(event)">Upload & Predict</button>
+    <p id="status"></p>
+    <pre id="result" style="background:#f4f4f4; padding:10px; max-height:500px; overflow:auto;"></pre>
+
+    <script>
+        async function upload(e) {
+            e.preventDefault();
+            const file = document.getElementById('fileInput').files[0];
+            if (!file) { alert('Select a file first!'); return; }
+
+            document.getElementById('status').textContent = 'Uploading...';
+            document.getElementById('result').textContent = '';
+
+            try {
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const res = await fetch('http://127.0.0.1:8000/api/upload/', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await res.json();
+                document.getElementById('status').textContent = 'Status: ' + res.status;
+                document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+            } catch (err) {
+                document.getElementById('status').textContent = 'Error!';
+                document.getElementById('result').textContent = err.message;
+            }
+        }
+    </script>
+</body>
+
+</html>
