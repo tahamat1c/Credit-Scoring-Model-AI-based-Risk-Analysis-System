@@ -104,10 +104,10 @@ class UploadPredictView(APIView):
                     num_dependents      = row.get("num_dependents", None),
                     own_telephone       = str(row.get("own_telephone", "")),
                     foreign_worker      = str(row.get("foreign_worker", "")),
-                    raw_prediction      = pred["raw_prediction"],
+                    raw_prediction      = pred["prediction"],
                     risk_level          = pred["risk_level"],
                     risk_color          = pred["risk_color"],
-                    confidence          = pred["confidence"],
+                    confidence          = pred["prob_default"],
                     prob_good           = pred["probabilities"].get("good", 0),
                     prob_bad            = pred["probabilities"].get("bad", 0),
                 ))
@@ -139,8 +139,8 @@ class UploadPredictView(APIView):
                         "name": str(df.iloc[p["row_index"]].get("name", "")),
                         "risk_level":      p["risk_level"],
                         "risk_color":      p["risk_color"],
-                        "confidence":      p["confidence"],
-                        "raw_prediction":  p["raw_prediction"],
+                        "confidence":      p["prob_default"],
+                        "raw_prediction":  p["prediction"],
                         "probabilities":   p["probabilities"],
                         # Include key customer fields for display
                         "age":            float(df.iloc[p["row_index"]].get("age", 0)),

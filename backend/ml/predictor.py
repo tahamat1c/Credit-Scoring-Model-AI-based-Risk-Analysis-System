@@ -6,129 +6,101 @@ import os
 MODEL_PATH    = os.path.join(os.path.dirname(__file__), "saved_models", "model.pkl")
 ENCODERS_PATH = os.path.join(os.path.dirname(__file__), "saved_models", "encoders.pkl")
 
-# Cache in memory so we don't reload from disk on every request
-_model    = None
+_model = None
 _encoders = None
 
 
 def _load_model():
     global _model, _encoders
     if _model is None:
-        _model    = joblib.load(MODEL_PATH)
+        _model = joblib.load(MODEL_PATH)
         _encoders = joblib.load(ENCODERS_PATH)
         print("[INFO] Model and encoders loaded into memory.")
     return _model, _encoders
 
 
-def get_risk_label(prediction: str, confidence: float) -> str:
-        if prediction == "good":
-            if confidence >= 75:
-                return "Low Risk"
-            else:
-                return "Medium Risk"
-        else:  # bad
-            if confidence >= 75:
-                return "High Risk"
-            else:
-                return "Medium Risk"
+# ─────────────────────────────────────────────
+# Risk logic (Probability of Default based)
+# ─────────────────────────────────────────────
 
-    
-    
-    
-    # if prediction == "good" and confidence >= 75:
-    #     return "Low Risk"
-    # elif prediction == "bad" and confidence >= 65:
-    #     return "High Risk"
-    # else:
-    #     return "Medium Risk"
+def get_risk_label(prob_bad: float) -> str:
+    """
+    prob_bad: probability of default (0–1)
+    """
+    if prob_bad >= 0.65:
+        return "High Risk"
+    elif prob_bad >= 0.35:
+        return "Medium Risk"
+    else:
+        return "Low Risk"
 
 
 def get_risk_color(risk_label: str) -> str:
-    """Return a color code for each risk tier (used by frontend)."""
     return {
-        "Low Risk":    "green",
+        "Low Risk": "green",
         "Medium Risk": "yellow",
-        "High Risk":   "red",
+        "High Risk": "red",
     }.get(risk_label, "gray")
 
 
-def predict_from_dataframe(X_scaled: np.ndarray) -> list:
-    """
-    Run prediction on a preprocessed (scaled) numpy array.
-    Returns a list of dicts with 3-tier risk label and confidence.
-    """
-    model, encoders = _load_model()
-    target_encoder  = encoders["__target__"]
+# ─────────────────────────────────────────────
+# Batch prediction
+# ─────────────────────────────────────────────
 
-    predictions   = model.predict(X_scaled)
+def predict_from_dataframe(X_scaled: np.ndarray) -> list:
+    model, encoders = _load_model()
+    target_encoder = encoders["__target__"]
+
     probabilities = model.predict_proba(X_scaled)
+    classes = target_encoder.classes_
 
     results = []
-    for i, (pred, proba) in enumerate(zip(predictions, probabilities)):
-        raw_label  = target_encoder.inverse_transform([pred])[0]   # "good" or "bad"
-        confidence = round(float(np.max(proba)) * 100, 2)
-        risk_label = get_risk_label(raw_label, confidence)
 
+    # find index of "bad" class once (faster + cleaner)
+    bad_index = list(classes).index("bad")
+
+    for i, proba in enumerate(probabilities):
+
+        # Probability of default (core risk metric)
+        prob_bad = float(proba[bad_index])
+
+        # Risk label based ONLY on PD
+        risk_label = get_risk_label(prob_bad)
+
+        # Class probability dictionary (for UI transparency)
         class_probs = {
-            target_encoder.inverse_transform([j])[0]: round(float(p) * 100, 2)
-            for j, p in enumerate(proba)
+            classes[j]: round(float(proba[j]) * 100, 2)
+            for j in range(len(classes))
         }
 
         results.append({
-            "row_index":     i,
-            "raw_prediction": raw_label,           # "good" / "bad"
-            "risk_level":    risk_label,            # "Low Risk" / "Medium Risk" / "High Risk"
-            "risk_color":    get_risk_color(risk_label),
-            "confidence":    confidence,
+            "row_index": i,
+
+            # TRUE model prediction (no fake logic)
+            "prediction": target_encoder.inverse_transform([np.argmax(proba)])[0],
+
+            # Core risk outputs
+            "risk_level": risk_label,
+            "risk_color": get_risk_color(risk_label),
+
+            # Most important metric (credit risk standard)
+            "prob_default": round(prob_bad * 100, 2),
+
+            # Optional transparency
             "probabilities": class_probs,
         })
 
     return results
 
 
-def predict_single(feature_dict: dict) -> dict:
-    """
-    Predict risk for a single customer given a dict of feature values.
-    Used for quick manual testing.
+# ─────────────────────────────────────────────
+# Single prediction
+# ─────────────────────────────────────────────
 
-    Example:
-        predict_single({
-            "income": 35000,
-            "debt": 15000,
-            "loan_amount": 10000,
-            "num_late_payments": 2,
-            "employment_years": 3
-        })
-    """
+def predict_single(feature_dict: dict) -> dict:
     from preprocessing import preprocess_uploaded_file
 
-    df     = pd.DataFrame([feature_dict])
+    df = pd.DataFrame([feature_dict])
     scaled = preprocess_uploaded_file(df)
-    result = predict_from_dataframe(scaled)
-    return result[0]
 
-
-# ── Manual test ───────────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    print("Running manual prediction test...\n")
-
-    # Sample row matching German Credit dataset columns
-    sample_customer = {
-        "Age":           35,
-        "gender":        "male",
-        "Job":           2,
-        "Housing":       "own",
-        "Saving acc":    "little",
-        "Checking acc":  "little",
-        "Credit amount": 5000,
-        "Duration":      24,
-        "Purpose":       "car",
-    }
-
-    result = predict_single(sample_customer)
-    print(f"Customer data: {sample_customer}")
-    print(f"\n→ Raw Prediction : {result['raw_prediction']}")
-    print(f"→ Risk Level     : {result['risk_level']}")
-    print(f"→ Risk Color     : {result['risk_color']}")
-    print(f"→ Confidence     : {result['confidence']}%")
-    print(f"→ Probabilities  : {result['probabilities']}")
+    return predict_from_dataframe(scaled)[0]
