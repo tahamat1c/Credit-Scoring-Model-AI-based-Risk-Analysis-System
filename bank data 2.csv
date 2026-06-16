@@ -1,0 +1,59 @@
+name,email,contact_number,checking_balance,duration,credit_history,purpose,credit_amount,savings_balance,employment_years,installment_rate,personal_status,other_parties,residence_years,property,age,other_payment_plans,housing,existing_credits,job,dependents,own_telephone,foreign_worker
+Zainab,zainab.81@gmail.com,923678722458.0,-31,47,all paid,furniture,7509,697,4,3,male married,none,4,real estate,35,stores,rent,2,unskilled resident,2,yes,yes
+Fatima,fatima.86@gmail.com,923602564736.0,241,32,all paid,furniture,4094,796,1,3,female married,none,3,life insurance,38,stores,rent,2,skilled,1,yes,no
+Maryam,maryam.29@gmail.com,923501486939.0,-735,65,critical,business,14906,61,1,3,male divorced,guarantor,1,life insurance,21,stores,rent,4,unskilled non-resident,2,no,no
+Aisha,aisha.26@gmail.com,923808402051.0,8287,23,existing paid,car,1585,9445,10,2,female single,guarantor,4,car,65,none,free,1,management,0,yes,no
+Khadijah,khadijah.41@gmail.com,923341266931.0,1549,16,existing paid,radio/tv,2909,9875,5,1,female single,none,2,none,35,none,own,1,skilled,0,yes,no
+Ruqayyah,ruqayyah.95@gmail.com,923621209849.0,-681,65,critical,car,15925,93,1,3,male married,guarantor,1,car,27,stores,rent,4,unskilled resident,1,no,yes
+Noor,noor.17@gmail.com,923532311310.0,12431,16,existing paid,education,1518,3939,5,2,male divorced,guarantor,1,car,39,none,own,2,management,0,yes,no
+Sara,sara.93@gmail.com,923680451872.0,14197,6,existing paid,furniture,3586,4672,5,2,male married,none,4,none,50,none,own,2,skilled,0,yes,no
+Layla,layla.68@gmail.com,923406284028.0,133,46,all paid,other,8552,777,4,2,female married,none,1,car,34,none,rent,3,skilled,0,yes,yes
+Amira,amira.33@gmail.com,923173574218.0,309,26,all paid,repairs,5926,513,1,2,male married,none,3,real estate,29,stores,own,2,unskilled resident,1,no,yes
+Hana,hana.50@gmail.com,923907308348.0,-226,24,delayed previously,appliance,9088,676,1,2,female single,none,4,none,45,stores,rent,2,skilled,2,yes,yes
+Sana,sana.88@gmail.com,923966616964.0,-231,64,critical,repairs,15471,90,1,3,female married,none,3,life insurance,22,stores,free,4,unskilled non-resident,1,no,yes
+Dina,dina.97@gmail.com,923781007818.0,-630,64,delayed previously,other,12057,26,0,4,female married,guarantor,1,car,24,bank,rent,3,unskilled resident,1,no,yes
+Rania,rania.19@gmail.com,923841976666.0,-748,65,critical,education,16837,67,0,4,male divorced,co applicant,4,life insurance,22,bank,rent,3,unskilled resident,2,no,yes
+Samira,samira.40@gmail.com,923274484941.0,13605,11,all paid,business,601,3738,9,2,male married,none,4,life insurance,60,none,own,2,skilled,0,yes,no
+Yasmin,yasmin.35@gmail.com,923976803188.0,171,35,delayed previously,radio/tv,5864,328,1,2,male divorced,co applicant,2,none,40,none,own,3,skilled,1,no,no
+Lubna,lubna.14@gmail.com,923216396351.0,310,37,delayed previously,car,9968,421,4,2,male divorced,co applicant,3,car,40,none,own,2,unskilled resident,1,yes,no
+Heba,heba.48@gmail.com,923644518647.0,16,45,delayed previously,repairs,6672,512,3,2,female single,none,4,none,34,stores,rent,3,skilled,2,no,yes
+Lina,lina.69@gmail.com,923574364121.0,152,45,existing paid,radio/tv,8187,584,2,2,male divorced,none,4,car,37,none,own,3,unskilled resident,0,yes,yes
+Salma,salma.68@gmail.com,923545002643.0,344,42,existing paid,other,9884,493,4,3,male divorced,none,1,real estate,35,none,rent,2,skilled,2,yes,yes
+Rahma,rahma.27@gmail.com,923960514523.0,-425,69,delayed previously,repairs,17782,116,1,4,female married,guarantor,2,none,28,bank,rent,4,unskilled resident,1,no,yes
+Nadia,nadia.66@gmail.com,923183197117.0,430,33,existing paid,car,6225,443,3,2,female single,guarantor,4,car,32,stores,rent,2,unskilled resident,0,yes,no
+Iman,iman.36@gmail.com,923994310083.0,130,36,all paid,repairs,9697,120,4,3,male married,guarantor,1,real estate,28,stores,own,3,unskilled resident,1,no,yes
+Basma,basma.53@gmail.com,923818197581.0,-205,60,critical,other,16885,79,0,3,male single,none,3,real estate,26,stores,free,5,unskilled resident,1,no,yes
+Wafa,wafa.51@gmail.com,923327268503.0,165,34,delayed previously,radio/tv,7105,384,4,3,male single,none,1,life insurance,30,none,own,3,unskilled resident,0,yes,yes
+Abdullah,abdullah.40@gmail.com,923235528741.0,8258,9,no credits,furniture,1392,8419,9,2,female single,none,1,none,59,none,free,2,skilled,0,yes,no
+Abdulrahman,abdulrahman.83@gmail.com,923827296111.0,84,36,all paid,appliance,5624,177,2,2,male divorced,guarantor,4,car,37,none,own,2,skilled,2,no,yes
+Mahmoud,mahmoud.65@gmail.com,923488896443.0,-250,62,critical,other,13567,42,1,4,male single,guarantor,4,none,27,bank,rent,4,unskilled non-resident,2,no,yes
+Mustafa,mustafa.13@gmail.com,923630757561.0,14442,16,existing paid,education,2497,4275,6,2,male divorced,none,4,real estate,45,none,free,2,skilled,1,yes,no
+Hamza,hamza.81@gmail.com,923914073098.0,4437,21,no credits,repairs,3415,8841,7,1,female married,co applicant,4,none,37,none,own,2,skilled,0,yes,no
+Salman,salman.64@gmail.com,923900942073.0,9517,16,all paid,appliance,3378,8234,6,2,male divorced,none,2,life insurance,43,none,free,1,skilled,0,yes,no
+Faisal,faisal.71@gmail.com,923396889215.0,-297,72,delayed previously,radio/tv,10823,44,1,3,male divorced,co applicant,2,real estate,25,stores,free,3,unskilled non-resident,2,no,yes
+Nasser,nasser.23@gmail.com,923113169872.0,287,33,delayed previously,radio/tv,7921,551,3,2,male single,none,3,car,29,none,rent,3,skilled,1,no,yes
+Zakariya,zakariya.41@gmail.com,923227186396.0,9643,19,no credits,repairs,2941,4497,10,2,female married,none,1,life insurance,49,none,free,2,management,1,yes,no
+Sulaiman,sulaiman.90@gmail.com,923326586581.0,4835,8,existing paid,repairs,1482,3647,8,1,male divorced,none,3,none,40,none,own,1,management,1,yes,no
+Idris,idris.99@gmail.com,923587512424.0,-828,69,critical,radio/tv,17568,53,0,4,male single,co applicant,3,real estate,21,stores,rent,5,unskilled non-resident,1,no,yes
+Dawud,dawud.25@gmail.com,923603260608.0,405,33,all paid,radio/tv,7297,378,4,3,female single,none,2,real estate,30,stores,own,2,unskilled resident,1,yes,yes
+Isa,isa.76@gmail.com,923799552991.0,7745,14,existing paid,appliance,2897,7941,9,2,male divorced,none,3,real estate,37,none,own,2,management,1,yes,no
+Yahya,yahya.98@gmail.com,923632005813.0,-605,69,delayed previously,radio/tv,16664,117,0,4,female married,guarantor,4,car,21,bank,rent,4,unskilled resident,2,no,no
+Musa,musa.34@gmail.com,923656670062.0,6427,21,no credits,business,2310,1645,5,2,male divorced,none,2,none,52,none,own,1,management,1,yes,no
+Harun,harun.80@gmail.com,923114682844.0,265,37,existing paid,education,5840,216,4,2,male married,none,4,life insurance,32,stores,own,3,skilled,2,no,no
+Jibril,jibril.86@gmail.com,923645719501.0,464,28,existing paid,appliance,6263,524,3,3,female single,guarantor,4,none,28,stores,own,3,unskilled resident,2,no,no
+Adnan,adnan.34@gmail.com,923848933239.0,-56,42,delayed previously,business,5913,520,1,3,male married,none,4,car,43,none,own,3,unskilled resident,1,yes,no
+Waleed,waleed.28@gmail.com,923540211187.0,-230,52,critical,other,13846,120,1,4,female married,none,1,life insurance,29,stores,rent,5,unskilled resident,2,no,yes
+Samir,samir.90@gmail.com,923834868441.0,5208,13,no credits,appliance,870,7910,4,1,male divorced,co applicant,3,none,49,none,own,1,skilled,1,yes,no
+Karim,karim.65@gmail.com,923256304376.0,-650,64,delayed previously,other,14636,107,0,3,female single,guarantor,3,car,22,stores,rent,3,unskilled non-resident,2,no,yes
+Rami,rami.69@gmail.com,923408842146.0,393,41,existing paid,education,4605,552,3,3,male married,co applicant,3,none,41,stores,rent,3,skilled,1,no,yes
+Tarek,tarek.12@gmail.com,923991246046.0,-226,60,delayed previously,repairs,10066,92,0,4,male single,none,1,none,24,stores,free,3,unskilled non-resident,2,no,no
+Sami,sami.66@gmail.com,923135824891.0,9995,17,no credits,appliance,1038,2276,6,2,female married,co applicant,2,none,58,none,own,2,skilled,0,yes,no
+Nabil,nabil.71@gmail.com,923965960427.0,-598,71,delayed previously,repairs,16588,34,1,3,female married,none,4,none,22,bank,rent,3,unskilled resident,2,no,yes
+Hisham,hisham.96@gmail.com,923904245086.0,-212,56,delayed previously,education,16737,101,1,3,male divorced,guarantor,3,real estate,30,stores,free,3,unskilled resident,2,no,no
+Majid,majid.24@gmail.com,923250084428.0,1242,7,all paid,car,2517,2702,4,1,female married,none,4,car,63,none,own,1,management,1,yes,no
+Rashid,rashid.72@gmail.com,923761051532.0,-483,56,critical,appliance,15654,67,0,4,male divorced,guarantor,3,life insurance,27,stores,free,3,unskilled resident,2,no,no
+Wissam,wissam.25@gmail.com,923984968439.0,165,26,all paid,appliance,5737,757,1,2,male single,none,3,life insurance,38,none,rent,2,unskilled resident,0,yes,yes
+Ziad,ziad.26@gmail.com,923680051935.0,-44,29,existing paid,furniture,9415,126,2,2,male married,none,1,real estate,39,stores,rent,2,unskilled resident,2,no,yes
+Bassam,bassam.67@gmail.com,923935389432.0,70,40,all paid,business,4893,562,2,2,male married,guarantor,1,car,44,none,rent,3,skilled,1,no,no
+Amer,amer.51@gmail.com,923753154389.0,2930,8,existing paid,business,1626,9784,9,2,male divorced,none,4,real estate,47,none,free,2,management,1,yes,no
+Saad,saad.39@gmail.com,923544328940.0,6053,20,all paid,business,2203,2357,6,2,male divorced,none,1,real estate,45,none,own,2,management,1,yes,no

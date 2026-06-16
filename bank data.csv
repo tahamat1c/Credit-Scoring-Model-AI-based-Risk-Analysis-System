@@ -1,0 +1,59 @@
+name,email,contact_number,checking_balance,duration,credit_history,purpose,credit_amount,savings_balance,employment_years,installment_rate,personal_status,other_parties,residence_years,property,age,other_payment_plans,housing,existing_credits,job,dependents,own_telephone,foreign_worker
+Ahmed,ahmed@example.com,9.23E+11,487,24,delayed previously,radio/tv,7877,463,5,2,male divorced,none,1,car,22,none,rent,3,unskilled resident,1,no,yes
+Mohammed,mohammed@example.com,9.23E+11,195,36,existing paid,business,7287,930,2,2,male single,none,1,life insurance,30,stores,own,2,unskilled resident,1,yes,yes
+Ali,ali@example.com,9.23E+11,-679,48,critical,furniture,10853,45,1,3,female single,none,3,car,26,bank,rent,3,unskilled resident,2,no,yes
+Omar,omar@example.com,9.23E+11,-789,72,delayed previously,education,13528,55,1,4,male married,co applicant,4,car,25,stores,rent,3,unskilled resident,1,no,yes
+Hassan,hassan@example.com,9.23E+11,117,36,existing paid,repairs,8352,736,1,3,male single,none,3,none,43,none,rent,2,unskilled resident,1,no,no
+Ibrahim,ibrahim@example.com,9.23E+11,464,36,delayed previously,appliance,7368,360,3,3,male divorced,co applicant,1,life insurance,43,none,rent,2,unskilled resident,1,no,no
+Yusuf,yusuf@example.com,9.23E+11,1955,18,existing paid,furniture,3223,6470,7,2,female single,guarantor,2,real estate,56,none,free,2,skilled,1,yes,no
+Khalid,khalid@example.com,9.23E+11,-799,72,critical,furniture,10742,130,1,3,female single,co applicant,1,car,26,stores,rent,2,unskilled resident,1,no,no
+Tariq,tariq@example.com,9.23E+11,-741,60,critical,radio/tv,14049,142,2,4,female married,none,4,none,25,stores,rent,2,unskilled non-resident,2,no,no
+Bilal,bilal@example.com,9.23E+11,2093,24,existing paid,furniture,1973,3049,8,2,female single,guarantor,2,life insurance,41,none,free,2,skilled,1,yes,no
+Zaid,zaid@example.com,9.23E+11,2383,6,existing paid,business,1850,7522,12,1,male divorced,guarantor,2,real estate,64,none,free,1,management,1,yes,no
+Hamza,hamza@example.com,9.23E+11,69,18,delayed previously,repairs,3296,197,3,2,male divorced,co applicant,3,car,36,none,rent,1,skilled,1,no,yes
+Idris,idris@example.com,9.23E+11,-728,72,delayed previously,business,17158,44,2,4,female married,none,3,none,30,bank,rent,2,unskilled resident,1,no,yes
+Usman,usman@example.com,9.23E+11,1448,12,all paid,car,3666,1432,10,2,female married,none,4,life insurance,41,none,own,1,management,1,yes,no
+Faisal,faisal@example.com,9.23E+11,897,12,all paid,car,3502,7495,14,1,female single,none,4,real estate,58,none,free,2,management,1,yes,no
+Aisha,aisha@example.com,9.23E+11,583,18,existing paid,education,1043,1092,9,2,female married,guarantor,3,real estate,61,none,free,1,skilled,1,yes,no
+Fatima,fatima@example.com,9.23E+11,-458,72,critical,car,8566,96,1,3,female married,none,2,none,23,stores,rent,3,unskilled resident,1,no,no
+Zainab,zainab@example.com,9.23E+11,1564,12,existing paid,radio/tv,2280,1035,14,1,female single,none,4,real estate,41,none,free,1,management,1,yes,no
+Mariam,mariam@example.com,9.23E+11,-648,48,no credits,furniture,8583,128,1,4,male divorced,none,2,none,28,bank,rent,3,unskilled non-resident,1,no,no
+Noor,noor@example.com,9.23E+11,-562,72,no credits,radio/tv,15940,53,2,3,female single,co applicant,1,none,21,bank,rent,3,unskilled resident,1,no,no
+Sana,sana@example.com,9.23E+11,-560,48,no credits,furniture,11715,175,2,4,male single,co applicant,1,none,22,stores,rent,3,unskilled non-resident,2,no,yes
+Hira,hira@example.com,9.23E+11,-353,48,critical,furniture,11106,12,2,4,female married,none,3,car,29,stores,rent,2,unskilled non-resident,1,no,no
+Amina,amina@example.com,9.23E+11,199,24,delayed previously,education,7348,633,2,3,male married,none,2,car,33,none,own,3,skilled,2,yes,no
+Khadija,khadija@example.com,9.23E+11,-249,48,delayed previously,business,8352,7,0,3,male single,none,3,car,28,stores,rent,2,unskilled resident,2,no,yes
+Ruqayyah,ruqayyah@example.com,9.23E+11,254,48,delayed previously,repairs,7581,1420,3,3,male divorced,co applicant,2,car,30,none,own,1,skilled,2,no,yes
+Saad,saad@example.com,9.23E+11,1370,24,all paid,other,2638,1138,14,2,male married,none,3,life insurance,37,none,own,2,management,1,yes,no
+Imran,imran@example.com,9.23E+11,2587,12,existing paid,car,1673,4263,8,1,female single,guarantor,1,life insurance,61,none,free,1,skilled,1,yes,no
+Raza,raza@example.com,9.23E+11,324,24,delayed previously,radio/tv,4575,967,5,2,female married,none,3,car,32,none,own,3,skilled,1,no,no
+Asif,asif@example.com,9.23E+11,90,48,existing paid,furniture,5537,478,4,3,male divorced,none,4,car,30,stores,rent,3,skilled,2,yes,yes
+Naveed,naveed@example.com,9.23E+11,-400,48,critical,radio/tv,17793,123,0,4,female married,co applicant,3,car,27,stores,rent,4,unskilled resident,2,no,no
+Kashif,kashif@example.com,9.23E+11,261,24,existing paid,furniture,8027,827,5,2,male married,none,4,none,35,none,own,2,unskilled resident,1,yes,no
+Junaid,junaid@example.com,9.23E+11,54,18,existing paid,car,4598,280,2,3,female married,none,3,car,26,stores,rent,1,skilled,1,yes,no
+Adeel,adeel@example.com,9.23E+11,2156,18,existing paid,appliance,2314,6314,9,2,female married,guarantor,4,real estate,52,none,own,1,management,1,yes,no
+Waseem,waseem@example.com,9.23E+11,-65,60,delayed previously,furniture,17891,88,2,3,female single,co applicant,3,none,19,stores,rent,2,unskilled resident,2,no,yes
+Rizwan,rizwan@example.com,9.23E+11,-111,72,critical,radio/tv,13946,44,2,4,male single,none,4,car,19,stores,rent,3,unskilled resident,1,no,yes
+Huma,huma@example.com,9.23E+11,200,48,delayed previously,education,6052,1312,4,3,female single,none,2,car,33,none,own,2,skilled,1,no,no
+Sadia,sadia@example.com,9.23E+11,2931,6,all paid,business,1631,4340,7,1,female single,none,2,life insurance,31,none,free,1,skilled,1,yes,no
+Rabia,rabia@example.com,9.23E+11,135,36,delayed previously,furniture,6144,289,3,2,male divorced,co applicant,2,car,37,none,rent,2,skilled,1,yes,no
+Lubna,lubna@example.com,9.23E+11,-142,60,no credits,appliance,16775,10,0,3,male single,none,2,none,26,bank,rent,4,unskilled non-resident,2,no,yes
+Bushra,bushra@example.com,9.23E+11,79,48,existing paid,other,4028,1224,4,3,female married,none,3,none,23,stores,own,3,skilled,1,no,no
+Yasir,yasir@example.com,9.23E+11,-213,60,no credits,other,10451,176,0,4,male single,co applicant,4,none,29,stores,rent,4,unskilled non-resident,1,no,no
+Mubarak,mubarak@example.com,9.23E+11,-76,60,no credits,appliance,12264,155,1,4,male divorced,none,3,none,19,stores,rent,2,unskilled resident,1,no,yes
+Shakeel,shakeel@example.com,9.23E+11,164,48,delayed previously,radio/tv,6285,430,3,3,female single,none,1,car,26,stores,rent,2,unskilled resident,2,yes,no
+Kamran,kamran@example.com,9.23E+11,257,48,existing paid,business,6826,534,5,2,female married,co applicant,2,life insurance,35,stores,rent,1,skilled,1,yes,yes
+Salman,salman@example.com,9.23E+11,-71,60,delayed previously,education,13589,20,0,3,female single,none,1,none,29,stores,rent,3,unskilled resident,2,no,no
+Nadia,nadia@example.com,9.23E+11,1247,24,all paid,radio/tv,1806,3269,7,1,male married,guarantor,4,life insurance,38,none,free,2,management,1,yes,no
+Samina,samina@example.com,9.23E+11,2945,18,all paid,car,3017,4800,6,2,male married,none,4,life insurance,42,none,own,2,management,1,yes,no
+Farida,farida@example.com,9.23E+11,1787,6,existing paid,repairs,1017,7417,6,2,male single,none,3,real estate,38,none,own,1,skilled,1,yes,no
+Ghazala,ghazala@example.com,9.23E+11,746,6,existing paid,education,659,2577,8,1,male divorced,none,3,real estate,41,none,free,2,management,1,yes,no
+Parveen,parveen@example.com,9.23E+11,1883,12,all paid,education,571,6289,12,1,female married,none,4,real estate,43,none,free,2,management,1,yes,no
+Aamir,aamir@example.com,9.23E+11,1869,18,all paid,car,3155,5049,5,2,male married,none,3,life insurance,64,none,own,2,skilled,1,yes,no
+Zahid,zahid@example.com,9.23E+11,-94,72,delayed previously,furniture,10865,95,1,4,male single,co applicant,4,car,24,stores,rent,3,unskilled resident,1,no,no
+Shoaib,shoaib@example.com,9.23E+11,795,6,existing paid,radio/tv,956,3818,11,2,male single,none,3,real estate,33,none,own,2,management,1,yes,no
+Irfan,irfan@example.com,9.23E+11,160,24,delayed previously,radio/tv,5200,1119,2,2,male divorced,none,3,none,23,none,own,2,unskilled resident,2,yes,yes
+Umer,umer@example.com,9.23E+11,15000,5,existing paid,business,500,5000,10,2,male single,none,2,none,24,none,own,1,skilled,0,yes,no
+Nabiha,nabia@example.com,9.23E+11,4000,42,delayed previously,education,12000,1000,10,6,female single,co applicant,2,life insurance,25,none,own,1,skilled,2,no,no
+Sarosh,saro@example.com,9.23E+11,-728,72,delayed previously,business,17158,0,1,14,male single,none,3,none,19,bank,rent,5,unskilled resident,1,no,yes
+Areesha,aria@example.com,9.23E+11,-150,72,delayed previously,business,17158,0,1,20,female single,none,3,none,30,bank,rent,2,unskilled resident,1,no,yes
