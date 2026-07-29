@@ -908,24 +908,6 @@ export default function LandingPage() {
           <div style={{ display:'flex', flexDirection:'column', gap:16,
             animation:'heroFade 0.8s 0.3s ease both' }}>
 
-            {/* Spinning icon row — replace src with actual SVG paths */}
-            <div style={{ display:'flex', justifyContent:'center', gap:24, marginBottom:8 }}>
-              {[
-                { src:'src/assets/brain.svg', size:56, dur:12, glow:'#a78bfa', cw:true },
-                { src:'src/assets/cpu.svg',   size:44, dur:8,  glow:'#60a5fa', cw:false },
-                { src:'src/assets/chart.svg', size:50, dur:15, glow:'#34d399', cw:true },
-              ].map(({ src, size, dur, glow, cw }) => (
-                <div key={src} style={{ position:'relative', width:size, height:size }}>
-                  <div style={{ position:'absolute', inset:0, borderRadius:'50%',
-                    background:glow, filter:'blur(16px)', opacity:0.3 }}/>
-                  <img src={src} width={size} height={size} alt=""
-                    style={{ animation:`spin360 ${dur}s linear infinite${cw?'':' reverse'}`,
-                      filter:`drop-shadow(0 0 8px ${glow})`, position:'relative', zIndex:1 }}
-                    onError={e => { (e.currentTarget as HTMLImageElement).style.display='none' }}/>
-                </div>
-              ))}
-            </div>
-
             {/* Gauge */}
             <div style={{ borderRadius:16, border:'1px solid rgba(139,92,246,0.15)',
               background:'rgba(255,255,255,0.025)', padding:20, textAlign:'center' }}>
