@@ -459,3 +459,8 @@ Conclusion
 The AI-Based Credit Risk Analysis System combines machine learning, explainable AI, and full-stack web development to create a transparent credit risk assessment platform.
 The system goes beyond simply predicting whether a customer is risky. By integrating Random Forest with SHAP, it provides insight into the factors behind individual predictions.
 With dataset uploading, automated prediction, analytics, explainability, prediction history, and downloadable reports, the project demonstrates how AI can be integrated into a practical financial application while keeping the decision-making process transparent and auditable.
+
+Author
+Syed Taha Manzar
+
+This Project was developed for showcasing full-stack machine learning skills, combining a Django backend, React frontend, and explainable AI techniques to solve a real-world credit risk assessment problem.
